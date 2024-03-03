@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer Example</title>
+    <style>
+        #timer {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div id="timer">120:00</div>
+<button onclick="startTimer()">Start</button>
+<button onclick="stopTimer()">Stop</button>
+
+<script>
+    let timerInterval;
+    let seconds = 2;
+    let minutes = 0; // Khởi tạo thời gian đếm ngược ở 120 phút
+    let hours = 0;
+
+    function startTimer() {
+        timerInterval = setInterval(updateTimer, 1000);
+    }
+
+    function stopTimer() {
+        clearInterval(timerInterval);
+    }
+
+    function updateTimer() {
+        if (minutes === 0 && seconds === 0) {
+            stopTimer(); // Dừng bộ đếm khi hết thời gian
+            alert("Time's up!"); // Thông báo khi hết thời gian
+            return;
+        }
+
+        if (seconds === 0) {
+            seconds = 59;
+            minutes--;
+        } else {
+            seconds--;
+        }
+
+        const formattedTime = padNumber(minutes) + ":" + padNumber(seconds);
+        document.getElementById("timer").innerText = formattedTime;
+    }
+
+    function padNumber(number) {
+        return (number < 10 ? "0" : "") + number;
+    }
+</script>
+
+</body>
+</html>

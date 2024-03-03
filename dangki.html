@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            font-family: Roboto, Arial, sans-serif;
+            border: 0;
+        }
+        .div_dang_ki{
+            padding: 32px;
+        }
+        .div_dang_ki_ch{
+            padding: 0px 20px;
+            background-color: #E4EFFE;
+            border-radius: 15px;
+            height: calc(100vh - 64px);
+        }
+        .div_dang_ki_ch1{
+            display: flex;
+            justify-content: space-around;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            align-items: center;
+        }
+        .div_dang_ki_ch11{
+            color: #0071FF;
+            display: flex;
+            flex-direction: column;
+            width: 41.6%;
+        }
+        .div_dang_ki_ch11 img{
+            /* width: 41.6%; */
+            height: auto;
+        }
+        .div_dang_ki_ch11 h1{
+            margin-top: 12px;
+            display: inline-block;
+            margin-bottom: 0px;
+            font-size: 40px;
+            text-align: center;
+
+        }
+        .div_dang_ki_ch11 p{
+            color: #4b5563;
+            font-size: 25px;
+            text-align:left;
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }   
+        .div_dang_ki_ch12{
+            width: 30%;
+            background-color: #FFFFFC;
+            border-radius: 20px;
+            border: 1px solid #9BD3FF;
+            padding: 40px;
+        }
+        .f2 .form_dangki input{
+            display: block ;
+            border: 0;
+            border-radius: 8px;
+            background-color: #EBF4FA;
+            font-size: 16px;
+            padding : 5px 15px;
+            margin: 0px 0px 25px 0px;
+            width: 100%;
+            height: 50px;
+        }
+        .f2 #ch{
+            margin-bottom: 20px;
+        }
+        .f2 button{
+            height: 50px;
+            width: 100%;
+            font-size: 17px;
+            font-weight: 700;
+            color: white;
+            background-color: #0071FF;
+            border-radius: 8px;
+            border: 0;
+            margin-bottom: 25px;
+        }
+        .f2 button:hover{
+            background-color: #231F40;
+        }
+        .f2 .da_co_tk{
+            text-align: center;
+            color: #4b5563;
+        }
+        .f2 .da_co_tk a{
+            text-decoration: none;
+            color: #0071FF;
+        }
+        .f2 .da_co_tk a:hover{
+            color: #004BB8;
+            font-weight: 500;
+        }
+
+        .f2 label a:hover{
+            color: #004BB8;
+            font-weight: 500;
+        }
+        .f2 label a{
+            text-decoration: none;
+            color: #0071FF;
+        }
+    </style>
+    <div class="div_dang_ki">
+        <div class="div_dang_ki_ch">
+            <div class="div_dang_ki_ch1">
+                <div class="div_dang_ki_ch11">
+                    <img src="image4.png" alt="">
+                    <h1> Học Toiec Online Hàng Đầu</h1>
+                    <!-- <p>Chỉ cần một tài khoản, bạn có thể: 
+                        Học từ vựng, làm đề thi, tham gia các khóa học Online, hỏi bài tập
+                        giáo viên, kiểm tra trình độ...</p> -->
+                </div>
+                <div class="div_dang_ki_ch12">
+                    <form action="http://127.0.0.1:5500/DA/dang%20nhap.html" class="f2">
+                        <div class="form_dangki">
+                            <input type="email" name="email" placeholder="Email">
+                            <input type="text" name="so_dien_thoai" placeholder="Số Điện Thoại">
+                            <input type="password" name="pass_word" placeholder="Mật Khẩu">
+                            <input type="password" name="xac_nhan_pass_word" placeholder="Xác Nhận Mật Khẩu">
+                        </div>
+                        <input type="checkbox" name="check" value="true" id="ch">   
+                        <label for="ch">Tôi đã đọc và đồng ý các <a href="http://127.0.0.1:5500/DA/dieukhoan.html">điều khoản</a></label><br>
+                        <button>Đăng Kí</button>
+                        <div class="da_co_tk">Đã có tài khoản? <a href="http://127.0.0.1:5500/DA/dang%20nhap.html">Đăng nhập</a></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+/* .container {
+    width: 100%;
+    max-width: 1170px;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+body {
+    text-align: left;
+}
+body {
+    margin: 0;
+    font-family: Roboto,Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #1a1a1a;
+    background-color: #fff;
+} */
+
+
+    </style>
+    <div class="container">
+        <h1>Tạo list từ</h1>
+        <form action="/flashcards/lists/create/" method="POST" enctype="multipart/form-data">
+            <div id="div_id_title" class="form-group">
+                <label for="id_title" class=" requiredField">
+                    Tiêu đề
+                </label>
+                <div class>
+                    <input type="text" name="title" maxlength="255" class="textinput textInput form-control" required
+                        id="id_title">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="label" for="description">Mô tả</label>
+                <textarea class="form-control " id="field-description" name="description" rows="2" placeholder></textarea>  
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Lưu</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
